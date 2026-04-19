@@ -9,7 +9,7 @@ export function Footer() {
           <div>
             <Link to="/" className="flex items-center gap-2">
               <span className="grid h-7 w-7 place-items-center rounded-lg bg-gradient-accent text-[11px] font-bold text-accent-foreground">D</span>
-              <span className="text-sm font-semibold">darji.dev</span>
+              <span className="text-sm font-semibold">Darji Dev</span>
             </Link>
             <p className="mt-3 text-sm text-muted-foreground max-w-xs">
               Building scalable digital experiences from Ahmedabad, India.

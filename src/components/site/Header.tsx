@@ -40,7 +40,7 @@ export function Header() {
             <span className="relative flex h-7 w-7 items-center justify-center rounded-lg bg-gradient-accent text-[11px] font-bold text-accent-foreground shadow-glow">
               D
             </span>
-            <span className="hidden sm:inline text-sm font-semibold tracking-tight">darji.dev</span>
+            <span className="hidden sm:inline text-sm font-semibold tracking-tight">Darji Dev</span>
           </Link>
 
           <nav className="hidden md:flex items-center gap-1">

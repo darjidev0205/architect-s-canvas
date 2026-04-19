@@ -56,7 +56,7 @@ function HomePage() {
               transition={{ duration: 0.8, delay: 0.1 }}
               className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-semibold tracking-tighter leading-[0.95]"
             >
-              Hi, I'm <span className="text-gradient">Darji</span>.
+              Hi, I'm <span className="text-gradient">Dev</span>.
               <br />
               I build{" "}
               <Typewriter
