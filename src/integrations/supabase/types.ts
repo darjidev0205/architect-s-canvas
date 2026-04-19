@@ -14,7 +14,120 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      blog_posts: {
+        Row: {
+          content: string
+          cover_image: string | null
+          excerpt: string
+          id: string
+          published: boolean
+          published_at: string
+          read_minutes: number
+          slug: string
+          tags: string[]
+          title: string
+        }
+        Insert: {
+          content: string
+          cover_image?: string | null
+          excerpt: string
+          id?: string
+          published?: boolean
+          published_at?: string
+          read_minutes?: number
+          slug: string
+          tags?: string[]
+          title: string
+        }
+        Update: {
+          content?: string
+          cover_image?: string | null
+          excerpt?: string
+          id?: string
+          published?: boolean
+          published_at?: string
+          read_minutes?: number
+          slug?: string
+          tags?: string[]
+          title?: string
+        }
+        Relationships: []
+      }
+      contact_messages: {
+        Row: {
+          created_at: string
+          email: string
+          id: string
+          message: string
+          name: string
+          subject: string | null
+        }
+        Insert: {
+          created_at?: string
+          email: string
+          id?: string
+          message: string
+          name: string
+          subject?: string | null
+        }
+        Update: {
+          created_at?: string
+          email?: string
+          id?: string
+          message?: string
+          name?: string
+          subject?: string | null
+        }
+        Relationships: []
+      }
+      projects: {
+        Row: {
+          case_study: string | null
+          cover_image: string | null
+          created_at: string
+          description: string
+          display_order: number
+          featured: boolean
+          github_url: string | null
+          id: string
+          live_url: string | null
+          slug: string
+          tagline: string
+          tech_stack: string[]
+          title: string
+        }
+        Insert: {
+          case_study?: string | null
+          cover_image?: string | null
+          created_at?: string
+          description: string
+          display_order?: number
+          featured?: boolean
+          github_url?: string | null
+          id?: string
+          live_url?: string | null
+          slug: string
+          tagline: string
+          tech_stack?: string[]
+          title: string
+        }
+        Update: {
+          case_study?: string | null
+          cover_image?: string | null
+          created_at?: string
+          description?: string
+          display_order?: number
+          featured?: boolean
+          github_url?: string | null
+          id?: string
+          live_url?: string | null
+          slug?: string
+          tagline?: string
+          tech_stack?: string[]
+          title?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
